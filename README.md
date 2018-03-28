@@ -2,7 +2,7 @@
 Based on the research paper of Mr. Shai Avidan and Mr. Ariel Shamir
 Link: http://www.faculty.idc.ac.il/arik/SCWeb/imret/imret.pdf
 
-Libaries used: os, struct, sys, Python Imaging Library, Tkinter, tkFileDialog, unittest
+Libraries used: os, struct, sys, Python Imaging Library, Tkinter, tkFileDialog, unittest
 
 Tools used: python (IDLE)
 
@@ -32,4 +32,4 @@ dp(i,j)::=energy(i,j)+min[dp(i,j-1), dp(i+1,j-1), dp(i-1,j-1)]  // neighbors of 
 
 parent(i,j)::= (i,j-1) if dp(i,j-1) is minimum in above function; (i+1,j-1) if dp(i+1,j-1) is min; (i-1,j-1) if dp(i-1,j-1) is min.
 
-From the equation dp(i,j) it is clear that in any vertical seam the value of dp(i,j) increases as we go down. So, to find the vertical seam of the minimum energy among all other possible seams we first find the minimum value of dp(i,j) in the last layer (j=height-1) and then traverse from bottom to up using the parent pointer. 
+From the equation of dp(i,j), it is clear that in any vertical seam the value of dp(i,j) increases as we go down. So, to find the vertical seam of the minimum energy among all other possible seams we first find the minimum value of dp(i,j) in the last layer (j=height-1) and then traverse from bottom to up using the parent pointer. 
